@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -16,43 +20,25 @@ main {
   width: 70%;
 }
 
-.Navbar {
-  background-color: #46ACC2;
+.navbar {
   display: flex;
   padding: 16px;
-  font-family: sans-serif;
-  color: white;
 }
-.Navbar__Link {
-  padding-right: 8px;
+
+.logo {
 }
-.Navbar__Items {
-  display: flex;
-}
-.Navbar__Items--right {
-  margin-left:auto;
-}
-.Navbar__Link-toggle {
+
+.toggle {
   display: none;
 }
+
 @media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
+  .navbar {
     flex-direction: column;
   }
-.Navbar__Items {
-    display:none;
-  }
-.Navbar__Items--right {
-    margin-left:0;
-  }
-.Navbar__ToggleShow {
-    display: flex;
-  }
-.Navbar__Link-toggle {
+  .toggle {
     align-self: flex-end;
-    display: initial;
     position: absolute;
-    cursor: pointer;
-   }
+    display: initial;
+  }
 }
