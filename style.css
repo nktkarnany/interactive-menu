@@ -28,16 +28,10 @@ body {
   display: inline-block !important;
 }
 
-@media only screen and (min-width: 767px) {
-  .navbar {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .form {
     display: none;
+    order: 1;
   }
   .links {
     display: none;
