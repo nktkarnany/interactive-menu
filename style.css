@@ -18,11 +18,10 @@ body {
   padding: 4px 0;
 }
 
-/*
 .toggle {
   display: none;
+  padding: 20px 10px;
 }
-*/
 
 .nav-item {
   order: 1;
@@ -40,11 +39,14 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-/*
+  .nav-item {
+    display: none;
+  }
   .toggle {
+    align-self: flex-end;
+    position: absolute;
     display: initial;
   }
-*/
   .navbar {
     flex-direction: column;
     align-items: flex-start;
