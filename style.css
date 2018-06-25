@@ -34,6 +34,15 @@ body {
   padding: 8px;
 }
 
+.nav-item .tab a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item .tab a:hover {
+  color: red;
+}
+
 .show {
   display: inline-block !important;
 }
